@@ -111,7 +111,7 @@ function Hero() {
           >
             ARMAN <br />
             <span className="green-text">
-              AHMED KHAN
+              AHEMAD KHAN
             </span>
           </motion.h1>
 
@@ -141,7 +141,7 @@ function Hero() {
 
             <div className="secondary-btn">
               <a
-                href="https://anuragsite-five.vercel.app/"
+                href="https://arman-portfolio.online"
                 target="_blank"
                 rel="noopener noreferrer"
               >
