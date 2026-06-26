@@ -13,7 +13,7 @@ function Footer() {
         </p>
 
         <span>
-          Built By Anurag Pradhan & Arman Ahmed Khan
+          Built By Anurag Pradhan & Arman Ahemad Khan
         </span>
 
       </div>
