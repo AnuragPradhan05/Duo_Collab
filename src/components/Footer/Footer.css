@@ -1,0 +1,53 @@
+.footer{
+
+  padding:40px 80px;
+
+  background:var(--surface);
+
+  color:var(--text);
+
+}
+
+/* BOTTOM */
+
+.footer-bottom{
+
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:center;
+
+  border-top:3px solid var(--border);
+
+  padding-top:25px;
+
+  color:var(--text-light);
+
+  font-size:0.9rem;
+
+  letter-spacing:1px;
+
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+  .footer{
+
+    padding:30px 20px;
+
+  }
+
+  .footer-bottom{
+
+    flex-direction:column;
+
+    gap:12px;
+
+    text-align:center;
+
+  }
+
+}

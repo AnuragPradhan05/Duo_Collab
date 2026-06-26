@@ -1,0 +1,37 @@
+:root{
+
+  --background:#f8f9fa;
+
+  --text:#121212;
+
+  --primary:#ff5c00;
+
+  --secondary:#006c47;
+
+  --white:#ffffff;
+
+  --gray:#777777;
+
+  --border:rgba(0,0,0,0.08);
+
+  --navbar:rgba(248,249,250,0.8);
+
+}
+
+/* DARK MODE */
+
+.dark{
+
+  --background:#0f0f0f;
+
+  --text:#ffffff;
+
+  --white:#121212;
+
+  --gray:#aaaaaa;
+
+  --border:rgba(255,255,255,0.08);
+
+  --navbar:rgba(15,15,15,0.7);
+
+}
