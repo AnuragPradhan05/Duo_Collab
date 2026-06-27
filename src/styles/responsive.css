@@ -134,7 +134,8 @@
   }
 
   .primary-btn,
-  .secondary-btn{
+  .secondary-btn,
+  .hero-right .ghost-btn{
 
     width:100%;
 

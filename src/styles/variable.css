@@ -4,11 +4,15 @@
 
   --text:#121212;
 
+  --text-light:#555555;
+
   --primary:#ff5c00;
 
   --secondary:#006c47;
 
   --white:#ffffff;
+
+  --surface-2:#ffffff;
 
   --gray:#777777;
 
@@ -26,7 +30,11 @@
 
   --text:#ffffff;
 
+  --text-light:rgba(255,255,255,0.6);
+
   --white:#121212;
+
+  --surface-2:#1a1a1a;
 
   --gray:#aaaaaa;
 
@@ -34,4 +42,4 @@
 
   --navbar:rgba(15,15,15,0.7);
 
-}
+}
