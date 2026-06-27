@@ -1,39 +1,25 @@
 .hero{
-
   display:flex;
-
   width:100%;
-
   min-height:100vh;
-
   margin-top:80px;
-
 }
 
 /* BOTH SIDES */
 
 .hero-left,
 .hero-right{
-
   flex:1;
-
   position:relative;
-
   display:flex;
-
   align-items:center;
-
   overflow:hidden;
-
   transition:all 0.7s ease;
-
 }
 
 .hero-left:hover,
 .hero-right:hover{
-
   flex:1.3;
-
 }
 
 /* ====================================
@@ -41,21 +27,15 @@
 ==================================== */
 
 .hero-left{
-
   background:#121212;
-
   color:white;
-
 }
 
 /* DARK MODE SWITCH */
 
 .dark .hero-left{
-
   background:#f8f9fa;
-
   color:#121212;
-
 }
 
 /* ====================================
@@ -63,21 +43,15 @@
 ==================================== */
 
 .hero-right{
-
   background:#f8f9fa;
-
   color:#121212;
-
 }
 
 /* DARK MODE SWITCH */
 
 .dark .hero-right{
-
   background:#121212;
-
   color:white;
-
 }
 
 /* ====================================
@@ -85,15 +59,10 @@
 ==================================== */
 
 .overlay{
-
   position:absolute;
-
   inset:0;
-
   background:rgba(255,255,255,0.03);
-
   pointer-events:none;
-
 }
 
 /* ====================================
@@ -101,15 +70,10 @@
 ==================================== */
 
 .hero-content{
-
   position:relative;
-
   z-index:2;
-
   padding:80px;
-
   max-width:700px;
-
 }
 
 /* ====================================
@@ -117,25 +81,16 @@
 ==================================== */
 
 .hero-number{
-
   display:block;
-
   margin-bottom:20px;
-
   font-size:14px;
-
   font-weight:700;
-
   letter-spacing:6px;
-
   color:var(--primary);
-
 }
 
 .green{
-
   color:var(--secondary);
-
 }
 
 /* ====================================
@@ -143,31 +98,20 @@
 ==================================== */
 
 .hero-title{
-
   font-size:6rem;
-
   line-height:0.9;
-
   font-weight:800;
-
   margin-bottom:40px;
-
   white-space:nowrap;
-
 }
 
 .hero-title span{
-
   color:var(--primary);
-
 }
 
 .green-text{
-
   color:var(--secondary);
-
   white-space:nowrap;
-
 }
 
 .hero-title span.green-text{
@@ -179,35 +123,24 @@
 ==================================== */
 
 .hero-description{
-
   font-size:1.1rem;
-
   line-height:1.8;
-
   opacity:0.75;
-
   margin-bottom:50px;
-
 }
 
 .dark-text{
-
   color:#555;
-
 }
 
 /* DARK MODE */
 
 .dark .hero-right .dark-text{
-
   color:rgba(255,255,255,0.7);
-
 }
 
 .dark .hero-left .hero-description{
-
   color:#444;
-
 }
 
 /* ====================================
@@ -215,68 +148,46 @@
 ==================================== */
 
 .hero-buttons{
-
   display:flex;
-
   align-items:center;
-
   gap:30px;
-
 }
 
 .primary-btn,
 .secondary-btn{
-
   padding:18px 36px;
-
   font-weight:700;
-
   letter-spacing:2px;
-
   text-transform:uppercase;
-
   transition:0.4s ease;
-
 }
 
 /* LEFT BUTTON */
 
 .primary-btn{
-
   background:var(--primary);
-
   color:white;
-
 }
 
 /* RIGHT BUTTON */
 
 .secondary-btn{
-
   background:var(--secondary);
-
   color:white;
-
   border:1px solid rgba(0,108,71,0.2);
-
 }
 
 /* DARK MODE BUTTON */
 
 .dark .secondary-btn{
-
   background:var(--primary);
-
   color:white;
-
   border:1px solid rgba(255,255,255,0.1);
-
 }
 
 .dark .primary-btn{
-    background:var(--secondary);
-
-    color:white;
+  background:var(--secondary);
+  color:white;
 }
 
 /* ====================================
@@ -285,9 +196,51 @@
 
 .primary-btn:hover,
 .secondary-btn:hover{
-
   transform:
     translateY(-4px)
     scale(1.03);
+}
 
+/* ====================================
+   ARMAN SIDE — TIER 2 (scoped)
+==================================== */
+
+.hero-right .hero-role{
+  display:block;
+  margin:-25px 0 35px;
+  font-size:1rem;
+  font-weight:600;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  color:var(--secondary);
+}
+
+.hero-right .hero-tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-bottom:45px;
+}
+
+.hero-right .hero-tags span{
+  font-family:monospace;
+  font-size:0.8rem;
+  padding:6px 14px;
+  border:1px solid currentColor;
+  border-radius:999px;
+  opacity:0.85;
+}
+
+.hero-right .ghost-btn{
+  padding:18px 36px;
+  font-weight:700;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  background:transparent;
+  border:1px solid currentColor;
+  transition:0.4s ease;
+}
+
+.hero-right .ghost-btn:hover{
+  transform:translateY(-4px) scale(1.03);
 }
