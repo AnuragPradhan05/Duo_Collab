@@ -96,6 +96,18 @@ function Hero() {
           }}
         >
 
+          <motion.span
+            className="hero-status"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{
+              duration: 1
+            }}
+          >
+            <span className="dot"></span>
+            Open to Jobs 2026
+          </motion.span>
+
           <span className="hero-number green-text">
             02
           </span>
@@ -186,6 +198,16 @@ function Hero() {
                 rel="noopener noreferrer"
               >
                 GitHub ↗
+              </a>
+            </div>
+
+            <div className="linkedin-btn">
+              <a
+                href="https://linkedin.com/in/arman-ahemad-khan"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn ↗
               </a>
             </div>
 
