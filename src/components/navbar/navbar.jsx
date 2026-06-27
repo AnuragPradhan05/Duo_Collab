@@ -26,7 +26,7 @@ function Navbar() {
     <header className="navbar">
 
       <h1 className="logo">
-        DUO COLLAB
+        <span className="logo-a">Bin</span><span className="logo-b">ary</span>
       </h1>
 
       <button
