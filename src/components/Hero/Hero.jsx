@@ -115,6 +115,18 @@ function Hero() {
             </span>
           </motion.h1>
 
+          <motion.span
+            className="hero-role"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{
+              delay: 0.55,
+              duration: 1
+            }}
+          >
+            Full-Stack Developer · Ethical Hacker
+          </motion.span>
+
           <motion.p
             className="hero-description dark-text"
             initial={{ opacity: 0 }}
@@ -124,10 +136,28 @@ function Hero() {
               duration: 1
             }}
           >
-            Fresh perspectives on brand storytelling.
-            Organic growth ecosystems and fluid visual
-            identities for the modern era.
+            Full-stack developer and ethical hacker working at the
+            intersection of code and security. I build secure,
+            production-ready web apps — and break them before attackers can.
           </motion.p>
+
+          <motion.div
+            className="hero-tags"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{
+              delay: 0.85,
+              duration: 1
+            }}
+          >
+            <span>VAPT</span>
+            <span>Red Team</span>
+            <span>React</span>
+            <span>Java</span>
+            <span>FastAPI</span>
+            <span>Kali</span>
+            <span>C++</span>
+          </motion.div>
 
           <motion.div
             className="hero-buttons"
@@ -146,6 +176,16 @@ function Hero() {
                 rel="noopener noreferrer"
               >
                 View Portfolio
+              </a>
+            </div>
+
+            <div className="ghost-btn">
+              <a
+                href="https://github.com/arman080325"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub ↗
               </a>
             </div>
 
