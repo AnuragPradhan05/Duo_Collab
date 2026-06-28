@@ -229,6 +229,7 @@
   border:1px solid currentColor;
   border-radius:999px;
   opacity:0.85;
+  transition:0.3s ease;
 }
 
 .hero-right .ghost-btn{
@@ -251,6 +252,22 @@
 
 .hero-right .hero-buttons{
   flex-wrap:wrap;
+  gap:16px;
+}
+
+.hero-right .secondary-btn,
+.hero-right .ghost-btn,
+.hero-right .linkedin-btn{
+  padding:14px 22px;
+  letter-spacing:1px;
+  white-space:nowrap;
+}
+
+.hero-right .ghost-btn a,
+.hero-right .linkedin-btn a{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
 }
 
 .hero-right .hero-status{
@@ -278,10 +295,6 @@
 }
 
 .hero-right .linkedin-btn{
-  padding:18px 36px;
-  font-weight:700;
-  letter-spacing:2px;
-  text-transform:uppercase;
   background:transparent;
   color:#0a66c2;
   border:1px solid #0a66c2;
@@ -295,7 +308,40 @@
 }
 
 @media(max-width:768px){
+  .hero-right .hero-buttons{
+    flex-wrap:wrap;
+  }
+  .hero-right .secondary-btn,
+  .hero-right .ghost-btn,
   .hero-right .linkedin-btn{
     width:100%;
   }
+}
+
+/* ====================================
+   ARMAN SIDE — keep long name on one line at desktop (scoped)
+==================================== */
+
+@media(min-width:1201px){
+  .hero-right .hero-title{
+    font-size:clamp(4rem, 4.6vw, 5.6rem);
+  }
+}
+
+/* ====================================
+   ARMAN SIDE — tag hover (#3) + bio keyword emphasis (#4) (scoped)
+==================================== */
+
+.hero-right .hero-tags span:hover{
+  background:var(--secondary);
+  border-color:var(--secondary);
+  color:#fff;
+  opacity:1;
+  transform:translateY(-3px);
+  box-shadow:0 4px 12px rgba(0,108,71,0.3);
+}
+
+.hero-right .hero-description .hl{
+  color:var(--secondary);
+  font-weight:600;
 }
