@@ -96,6 +96,18 @@ function Hero() {
           }}
         >
 
+          <motion.div
+            className="hero-photo"
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 0.8,
+              ease: [0.16, 1, 0.3, 1]
+            }}
+          >
+            <img src="../../../public/arman.jpg" alt="Arman Ahemad Khan" />
+          </motion.div>
+
           <motion.span
             className="hero-status"
             initial={{ opacity: 0 }}

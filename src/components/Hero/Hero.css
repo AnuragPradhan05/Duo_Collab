@@ -324,7 +324,7 @@
 
 @media(min-width:1201px){
   .hero-right .hero-title{
-    font-size:clamp(4rem, 4.6vw, 5.6rem);
+    font-size:clamp(4rem, 4vw, 5rem);
   }
 }
 
@@ -344,4 +344,33 @@
 .hero-right .hero-description .hl{
   color:var(--secondary);
   font-weight:600;
+}
+
+/* ====================================
+   ARMAN SIDE — profile photo (scoped)
+==================================== */
+
+.hero-right .hero-photo{
+  width:160px;
+  height:160px;
+  margin-bottom:30px;
+  border-radius:50%;
+  overflow:hidden;
+  border:2px solid var(--secondary);
+  box-shadow:0 12px 30px rgba(0,0,0,0.15);
+  background:var(--surface-2);
+}
+
+.hero-right .hero-photo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+@media(max-width:768px){
+  .hero-right .hero-photo{
+    width:120px;
+    height:120px;
+  }
 }
